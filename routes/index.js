@@ -75,7 +75,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
     var cart = new Cart(req.session.cart);
     
     var stripe = require("stripe")(
-        "sk_test_fwmVPdJfpkmwlQRedXec5IxR"
+        "sk_test_NriFH2AGZ9S2wuyC7JG2R889"
     );
 
     stripe.charges.create({
