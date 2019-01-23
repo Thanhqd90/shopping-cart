@@ -1,105 +1,20 @@
+{{#each products }}
 <div class="row">
+    {{#each this}}
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/334000/620x/Super-Mario-Level-Up-Boardgame-605999.jpg"
+            <img src="{{this.imagePath}}"
                 class="img-responsive" alt="image 1">
             <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at dolore
-                    adipisci ullam praesentium officiis cum quae in est accusantium ad labore, neque aperiam, similique
-                    assumenda dolorum suscipit aut totam!</p>
+                <h3>{{this.title}}</h3>
+                <p class="description">{{this.description}}</p>
 
                 <div class="clearfix">
-                    <div class="price pull-left">$50</div><a href="#" class="btn btn-success pull-right" role="button">Button</a>
+                    <div class="price pull-left">${{this.price}}</div><a href="#" class="btn btn-success pull-right" role="button">Add to Shopping Cart</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="https://venturebeat.com/wp-content/uploads/2018/05/donkeykong2.jpg?fit=400%2C261&strip=all" class="img-responsive"
-                alt="image 2">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at dolore
-                    adipisci ullam praesentium officiis cum quae in est accusantium ad labore, neque aperiam, similique
-                    assumenda dolorum suscipit aut totam!</p>
-
-                <div class="clearfix">
-                    <div class="price pull-left">$30</div><a href="#" class="btn btn-success pull-right" role="button">Button</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="https://steamcdn-a.akamaihd.net/steam/apps/743890/header.jpg?t=1535330384" class="img-responsive"
-                alt="image 3">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at dolore
-                    adipisci ullam praesentium officiis cum quae in est accusantium ad labore, neque aperiam, similique
-                    assumenda dolorum suscipit aut totam!</p>
-
-                <div class="clearfix">
-                    <div class="price pull-left">$25</div><a href="#" class="btn btn-success pull-right" role="button">Button</a>
-                </div>
-            </div>
-        </div>
-    </div>
+{{/each}}
 </div>
-
-<div class="row">
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="https://cdn.images.dailystar.co.uk/dynamic/184/photos/334000/620x/Super-Mario-Level-Up-Boardgame-605999.jpg"
-                class="img-responsive" alt="image 1">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at dolore
-                    adipisci ullam praesentium officiis cum quae in est accusantium ad labore, neque aperiam, similique
-                    assumenda dolorum suscipit aut totam!</p>
-
-                <div class="clearfix">
-                    <div class="price pull-left">$50</div><a href="#" class="btn btn-success pull-right" role="button">Button</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="https://venturebeat.com/wp-content/uploads/2018/05/donkeykong2.jpg?fit=400%2C261&strip=all" class="img-responsive"
-                alt="image 2">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at dolore
-                    adipisci ullam praesentium officiis cum quae in est accusantium ad labore, neque aperiam, similique
-                    assumenda dolorum suscipit aut totam!</p>
-
-                <div class="clearfix">
-                    <div class="price pull-left">$30</div><a href="#" class="btn btn-success pull-right" role="button">Button</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="https://steamcdn-a.akamaihd.net/steam/apps/743890/header.jpg?t=1535330384" class="img-responsive"
-                alt="image 3">
-            <div class="caption">
-                <h3>Thumbnail label</h3>
-                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam at dolore
-                    adipisci ullam praesentium officiis cum quae in est accusantium ad labore, neque aperiam, similique
-                    assumenda dolorum suscipit aut totam!</p>
-
-                <div class="clearfix">
-                    <div class="price pull-left">$25</div><a href="#" class="btn btn-success pull-right" role="button">Button</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{/each}}

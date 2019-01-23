@@ -24,8 +24,16 @@ var products = [
     })
 ];
 
+var done = 0;
 for (var i = 0; i < products.length; i++) {
-    products[i].save();
+    products[i].save(function(err, result) {
+        done++;
+        if (done === products.length) {
+            exit();
+        }
+    });
 }
 
-mongoose.disconnect();
+function exit() {
+    mongoose.disconnect();
+}
